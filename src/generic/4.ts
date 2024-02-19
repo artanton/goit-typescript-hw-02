@@ -1,14 +1,14 @@
 /*
   Використовуйте generics та інтерфейси, щоб виправити помилку в наступних класах:
 */
-interface ComponentProp{};
 
-class Component<T extends ComponentProp> {
+
+class Component<T> {
   constructor (public props:T) {
 
   }
 }
-interface PageProps extends ComponentProp {
+interface PageProps  {
   title: string;
 }
 
